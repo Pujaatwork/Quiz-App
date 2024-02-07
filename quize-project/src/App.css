@@ -1,0 +1,28 @@
+
+.green{
+    background-color: green;
+   
+}
+.red{
+    background-color: red;
+    
+}
+.container{
+    background-color: coral;
+    box-shadow: 2px 2px 2px  ;
+    border:2px black;
+    border-radius: 10px;
+}
+p{
+    height: auto;
+    background: linear-gradient(90deg, blue, red);
+    transition: text;
+
+   
+}
+button{
+    height: 40px;
+    width: 70px;
+    padding: 0;
+    margin: 0;
+}
