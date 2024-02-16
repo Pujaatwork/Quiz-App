@@ -1,0 +1,33 @@
+[
+    {
+      "currentQuestion": "Que-1. Whose library is react?",
+      "option": [
+        "(A)HTML",
+        "(B)CSS",
+        "(C)JavaScript",
+        "(D)Python"
+        
+      ],
+      "Answer":2
+    },
+    {
+      "currentQuestion": "Que-2. What is Odd number?",
+      "option": [
+        "(A) 18",
+        "(B) 20 ",
+        "(C) 22",
+        "(D) 11"
+      ],
+      "Answer":3
+    },
+    {
+      "currentQuestion": "Que-3. who is CM of madhya pradesh?",
+      "option": [
+        "(A) Manmohanpal",
+        "(B) Rajendra prasad",
+        "(C)Shivrajsingh",
+        "(D)Rajendra Yadav "
+      ],
+      "Answer":3
+    }
+  ]

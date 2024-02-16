@@ -1,46 +1,45 @@
-// import { useState } from 'react'
-import Quiz from './Component/Quiz.json'
-import Question from './Component/Question'
 import { useState } from 'react'
+import Quiz from './component/Quiz'
 import Option from './Component/Option'
+
+import Data from './Data/Data.json'
 import './App.css'
 
-
 function App() {
-    // console.log(Quiz)
-    const [count, setCount] = useState(0)
-    const [selectIndex, setSelectIndex] = useState(null)
-    const correctAnswer=Quiz[count].Ans
-    const optionClick = (index) => {
-        setSelectIndex(index)
-        console.log(index);
+  const [questionCount, setquestionCount] = useState(0);
+  const [selectedOption, setselectedOption] = useState(null);
+  const [selectedAnswer, selectedAnsOption] = useState(null);
+  const handleClick = () => {
+    let newQuesCount = questionCount
+    setquestionCount(newQuesCount + 1);
+    setselectedOption(null)
+    selectedAnsOption(null)
+    if (questionCount === 2) {
+      setquestionCount(0)
     }
+  }
+  function clickedOption(currentIndex) {
+    setselectedOption(currentIndex)
 
-    const handleClick = () => {
+    selectedAnsOption(Data[questionCount].Answer)
+    //console.log(questionCount)
+  }
 
-        if (count === 3) {
-            setCount(0)
-        }
-        else {
-            setCount(count + 1)
-        }
+  return (
+    <div className='container'>
+      <Quiz question={Data[questionCount].currentQuestion} />
+      {
+        Data[questionCount].option.map((option, i) => {
+          return (
+            <Option key={i} option={option} currectAnswer={selectedAnswer} currentIndex={i} clickedOption={clickedOption} selectedOption={selectedOption} questionCount={setquestionCount}/>
 
-    }
-    return (
+          )
+        })
+      }
+      <button className='btn' onClick={handleClick}>Next</button>
 
-        <div className='container'>
-            <h1>Quiz question</h1>
-            <Question question={Quiz[count].Question} />
-
-            {Quiz[count].Option.map((counting, index) => {
-                return (
-                    <Option key={index} option={counting}selectIndex={selectIndex} optionClick={optionClick} index={index} correctAnswer={correctAnswer} />
-                )
-
-            })}
-            <button onClick={handleClick}>Next</button>
-        </div>
-    )
+    </div>
+  )
 }
-
 export default App
+

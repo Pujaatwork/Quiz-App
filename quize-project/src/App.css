@@ -1,28 +1,34 @@
 
+body{
+    display: flex;
+    justify-content: center;
+}
 .green{
     background-color: green;
+    border-radius: 5px;
+    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231) ;;
    
 }
 .red{
     background-color: red;
+    border-radius: 5px;
+    box-shadow:3px 4px 4px 5px rgb(95, 154, 231) ; ;
     
 }
 .container{
-    background-color: coral;
-    box-shadow: 2px 2px 2px  ;
+    background-color: rgb(117, 216, 230);
+    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231) ;
     border:2px black;
     border-radius: 10px;
-}
-p{
-    height: auto;
-    background: linear-gradient(90deg, blue, red);
-    transition: text;
-
-   
+    max-width: 320%;
+    max-height: 320%;
+    text-align: center;
+    
 }
 button{
-    height: 40px;
-    width: 70px;
-    padding: 0;
-    margin: 0;
+    border-radius: 5px;
+    color: darkcyan;
+    border: 3px solid cornflowerblue;
+
+
 }
