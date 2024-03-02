@@ -1,34 +1,39 @@
-
-body{
+body {
     display: flex;
     justify-content: center;
+    font-size: 30px;
 }
-.green{
-    background-color: green;
+
+.green {
+    background-color: rgb(10, 127, 10);
     border-radius: 5px;
-    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231) ;;
-   
+    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231);
+
 }
-.red{
+
+.red {
     background-color: red;
     border-radius: 5px;
-    box-shadow:3px 4px 4px 5px rgb(95, 154, 231) ; ;
-    
+    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231);
+
 }
-.container{
-    background-color: rgb(117, 216, 230);
-    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231) ;
-    border:2px black;
+
+.container {
+    background-color: rgb(219, 236, 238);
+    box-shadow: 3px 4px 4px 5px rgb(95, 154, 231);
+    border: 2px black;
     border-radius: 10px;
-    max-width: 320%;
+    max-width: 1000px;
     max-height: 320%;
     text-align: center;
-    
+
 }
-button{
+
+button {
     border-radius: 5px;
-    color: darkcyan;
+    color: rgb(5, 16, 16);
     border: 3px solid cornflowerblue;
+    font-size: larger;
 
 
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Quiz from './component/Quiz'
+import Question from './Component/Quiz'
 import Option from './Component/Option'
 
 import Data from './Data/Data.json'
@@ -22,12 +22,12 @@ function App() {
     setselectedOption(currentIndex)
 
     selectedAnsOption(Data[questionCount].Answer)
-    //console.log(questionCount)
+    console.log(questionCount)
   }
 
   return (
     <div className='container'>
-      <Quiz question={Data[questionCount].currentQuestion} />
+      <Question question={Data[questionCount].currentQuestion} />
       {
         Data[questionCount].option.map((option, i) => {
           return (
